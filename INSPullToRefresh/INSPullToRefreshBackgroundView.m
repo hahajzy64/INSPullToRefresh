@@ -213,7 +213,7 @@ CGFloat const INSPullToRefreshDefaultDragToTriggerOffset = 54;
         
         if (firstReponderViewController.navigationController && firstReponderViewController.navigationController.navigationBar.translucent && firstReponderViewController.automaticallyAdjustsScrollViewInsets && self.scrollView.superview == firstReponderViewController.view) {
             firstReponderViewController.automaticallyAdjustsScrollViewInsets = NO;
-            self.scrollView.contentInset = UIEdgeInsetsMake(firstReponderViewController.navigationController.navigationBar.frame.origin.y + firstReponderViewController.navigationController.navigationBar.bounds.size.height, self.scrollView.contentInset.left, self.scrollView.contentInset.bottom, self.scrollView.contentInset.right);
+            self.scrollView.contentInset = UIEdgeInsetsMake(firstReponderViewController.navigationController.navigationBar.frame.origin.y + firstReponderViewController.navigationController.navigationBar.bounds.size.height + 40, self.scrollView.contentInset.left, self.scrollView.contentInset.bottom, self.scrollView.contentInset.right);
             self.scrollView.scrollIndicatorInsets = self.scrollView.contentInset;
         }
     }
