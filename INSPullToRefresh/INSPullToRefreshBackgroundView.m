@@ -57,7 +57,7 @@
 #import "UIView+INSFirstReponder.h"
 
 CGFloat const INSPullToRefreshDefaultResetContentInsetAnimationTime = 0.3;
-CGFloat const INSPullToRefreshDefaultDragToTriggerOffset = 54;
+CGFloat const INSPullToRefreshDefaultDragToTriggerOffset = 39;
 
 #define fequal(a,b) (fabs((a) - (b)) < FLT_EPSILON)
 
