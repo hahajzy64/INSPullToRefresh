@@ -280,6 +280,8 @@ static CGFloat const INSInfinityScrollContentInsetAnimationTime = 0.3;
             [weakSelf resetScrollViewContentInsetWithCompletion:^(BOOL finished) {
                 [weakSelf changeState:INSInfiniteScrollBackgroundViewStateNone];
             }];
+        } else {
+            [weakSelf changeState:INSInfiniteScrollBackgroundViewStateNone];
         }
     }];
 }
